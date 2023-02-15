@@ -17,7 +17,7 @@ export default {
     <div class="hero">
         <div class="partOne">
             <ul>
-                <li>International Shipping Services</li>
+                <li><i class="fa-regular fa-map"></i> International Shipping Services</li>
                 <li><i class="fa-sharp fa-regular fa-clock"></i> See our store houres and services</li>
                 <li><i class="fas fa-check"></i> We price match to give you the best deals</li>
             </ul>

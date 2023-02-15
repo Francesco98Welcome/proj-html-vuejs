@@ -39,7 +39,10 @@ export default {
 
         <div class="links-header">
             <ul>
-                <li v-for="item in menuItems">{{ item.text }}</li>
+                <li v-for="item in menuItems">
+                    {{ item.text }}
+                    <i v-if="item.subMenu" class="fa-solid fa-chevron-down"></i>
+                </li>
             </ul>
         </div>
 
@@ -81,14 +84,16 @@ export default {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
 
     li {
         padding-right: 40px;
         cursor: pointer;
     }
 
+
     >:not(:first-child) {
-        color: #c1c1c1;
+        color: #8a8a8a;
     }
 }
 </style>

@@ -38,7 +38,7 @@ export default {
             <div>
                 {{ info.text }}
             </div>
-            <div>
+            <div class="price">
                 <span class="old-price">{{ info.oldprice }}</span>
                 {{ info.price }}
             </div>
@@ -50,7 +50,6 @@ export default {
 <style lang="scss">
 .intro-items-section {
     display: flex;
-    border: 1px solid black;
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
@@ -71,6 +70,10 @@ export default {
             margin-bottom: 15px;
         }
     }
+}
+
+.price {
+    color: #b2a87e;
 }
 
 .old-price {

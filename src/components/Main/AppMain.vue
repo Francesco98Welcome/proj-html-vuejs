@@ -8,6 +8,7 @@ import UsersTestimonials from './Category/UsersTestimonials.vue';
 import NewsLetter from './Category/NewsLetter.vue';
 import TipsAndTricks from './Category/TipsAndTricks.vue';
 import AccessoryArrival from './Category/AccessoryArrival.vue';
+import NewProductArrival from './Category/NewProductArrival.vue';
 
 export default {
     name: 'AppMain',
@@ -23,7 +24,8 @@ export default {
         UsersTestimonials,
         NewsLetter,
         TipsAndTricks,
-        AccessoryArrival
+        AccessoryArrival,
+        NewProductArrival
     }
 
 }
@@ -70,6 +72,8 @@ export default {
         <TipsAndTricks />
 
         <AccessoryArrival />
+
+        <NewProductArrival />
     </main>
 
 </template>

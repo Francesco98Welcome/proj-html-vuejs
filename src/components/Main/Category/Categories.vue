@@ -18,11 +18,6 @@ export default {
             ],
         }
     },
-    /* props: {
-         info: {
-             type: Array,
-         }
-     },*/
 }
 </script>
 

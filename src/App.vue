@@ -16,18 +16,42 @@ export default {
   },
   data() {
     return {
+      // link header
+
       headerMenuItems: [
-        { text: "Home" },
-        { text: "About" },
+        { text: "Home", subMenu: true },
+        { text: "About", subMenu: true },
         { text: "Blog" },
         { text: "Contact" },
-        { text: "Shop by Brand" }
+        { text: "Shop by Brand", subMenu: true }
       ],
-      /*footerMenuItems: [
-        { text: "icon" },
-        { text: "icon" },
-        { text: "Support" }
-      ]*/
+
+
+      // prima sezione link footer
+
+      footerMenuItems: [
+        { titleShop: 'Shop by Brand' },
+        { item: 'Bed' },
+        { item: 'Food' },
+        { item: 'Toys' },
+        { item: 'Transport' },
+      ],
+      footerMenuItemsTwo: [
+        // seconda sezione link footer
+        { titleUseful: 'Useful links' },
+        { linkUseful: 'My account' },
+        { linkUseful: 'Orders' },
+        { linkUseful: 'Checkout' },
+        { linkUseful: 'Cart' },
+      ],
+      footerMenuItemsThree: [
+        // ultimi links per footer
+        { lastLinks: 'Home' },
+        { lastLinks: 'About' },
+        { lastLinks: 'Blog' },
+        { lastLinks: 'Contact' },
+        { lastLinks: 'Shop' }
+      ]
     }
   }
 }
@@ -37,7 +61,7 @@ export default {
   <div>
     <AppHeader :menuItems="headerMenuItems" />
     <AppMain />
-    <!--<AppFooter :menuItems="footerMenuItems" />-->
+    <AppFooter :menuItems="footerMenuItems" :menuItemsTwo="footerMenuItemsTwo" :menuItemsThree="footerMenuItemsThree" />
   </div>
 </template>
 
