@@ -1,15 +1,28 @@
 <script>
+// immagini per la sezione delle categorie. prima sezione a partire dal main.
+import cuscini from "../../../assets/categories/categories/cuscini200x200.jpg";
+import osso from "../../../assets/categories/categories/osso200x200.jpg";
+import palline from "../../../assets/categories/categories/palline200x200.jpg";
+import borsa from "../../../assets/categories/categories/borsa200x200.jpg";
+
 export default {
     name: 'Category',
     data() {
         return {
+            // salvo i dati per la sezione delle categorie, prima sezione del main
+            info: [
+                { text: 'Bed(1)', img: cuscini },
+                { text: 'Food(6)', img: osso },
+                { text: 'Toys(6)', img: palline },
+                { text: 'Trasport(6)', img: borsa },
+            ],
         }
     },
-    props: {
-        info: {
-            type: Array,
-        }
-    },
+    /* props: {
+         info: {
+             type: Array,
+         }
+     },*/
 }
 </script>
 
@@ -29,13 +42,11 @@ export default {
 
 <style lang="scss">
 .category {
-    // border: 1px solid black;
     display: flex;
 
     justify-content: space-between;
 
     >div {
-        // border: 1px solid black;
         width: calc(100% / 4);
         margin: 0 auto;
         margin: 6px;

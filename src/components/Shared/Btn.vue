@@ -4,22 +4,36 @@ export default {
     data() {
         return {
         }
+    },
+
+    props: {
+        text: {
+            type: String,
+            //default: ''
+        },
+        bg: {
+            type: String,
+            //default: 'gray'
+        },
+        color: {
+            type: String,
+            //default: 'black'
+        }
     }
 }
 </script>
 
 <template>
-    <button>
-        Learn more about us
-    </button>
+    <button :style="{ backgroundColor: bg, color: color, width: width }">{{ text }}</button>
 </template>
 
 <style lang="scss">
 button {
-    border: none;
-    background-color: rgb(101, 85, 85);
     border-radius: 20px;
-    width: 140px;
-    padding: 6px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: none;
 }
 </style>
