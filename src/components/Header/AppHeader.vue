@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<template>
+<template><!-- HEADER, SEZIONE CON LOGO, INPUT DI RICERCA  ECC..-->
     <header>
         <div class="container-header">
             <div>
@@ -32,10 +32,11 @@ export default {
                 </div>
             </div>
             <div><strong>Questions?</strong> Call us : 1.800.123.4567</div>
-            <div>icon <i class="fa-solid fa-user"></i></div>
+            <div><i class="fa-solid fa-bag-shopping"></i> <i class="fa-solid fa-user"></i></div>
         </div>
         <hr>
 
+        <!-- HEADER, SEZIONE CON I VARI LINK -->
 
         <div class="links-header">
             <ul>
@@ -47,8 +48,7 @@ export default {
         </div>
 
         <Introduction />
-    </header>
-
+</header>
 </template>
 
 <style lang="scss" scoped>

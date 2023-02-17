@@ -5,15 +5,12 @@ export default {
         return {
         }
     },
-    props: {
-        info: {
-            type: Array,
-        }
-    },
 }
 </script>
 
 <template>
+
+    <!-- SEZIONE DEI TESTIMONI CON FOTO DELLE FACCE DELLE PERSONE, DA RIFARE PERCHE' SCRITTO TROPPO CODICE -->
 
     <div class="usersTestimonials">
         <h2>Users Testimonials</h2>
@@ -70,6 +67,8 @@ export default {
     h2 {
         text-align: center;
         margin-top: 50px;
+        font-family: 'Mali', cursive;
+        font-size: 30px;
     }
 
     .users {

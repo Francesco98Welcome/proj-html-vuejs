@@ -9,12 +9,12 @@ export default {
     name: 'AccessoryArrival',
     data() {
         return {
-            infos: [
-                { text: 'find the best animal supplies', desc: 'popular accessories', btnText: 'View all toys accessories', img: dog },
-                { text: 'find the best food', desc: 'new food arrival', btnText: 'View all food products', img: cat },
+            infos: [ // SALVO I DATI ( TESTO E IMMAGINE ) PER LA SEZIONE CANE E GATTO
+                { text: 'find the best animal supplies', desc: 'Popular accessories', btnText: 'View all toys accessories', img: dog },
+                { text: 'find the best food', desc: 'New food arrival', btnText: 'View all food products', img: cat },
             ],
-            icons: [
-                { text: 'Free worldwide deliveries', imgIcon: 'fa-sharp fa-solid fa-truck' },
+            icons: [ // SALVO LE ICONE CHE MI SERVONO PER LA SEZIONE ICONE
+                { text: 'Free worldwide deliveries', imgIcon: "fa-solid fa-truck" },
                 { text: 'Find stores near you', imgIcon: 'fa-regular fa-map' },
                 { text: 'Best price guarranted', imgIcon: 'fa-sharp fa-solid fa-dollar-sign' },
                 { text: 'All credit card accepted', imgIcon: 'fa-solid fa-credit-card' }
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <!-- sezione cane e gatto -->
+    <!-- SEZIONE CANE E GATTO -->
 
     <div class="accessory-arrival">
         <div v-for="info in infos" class="container">
@@ -47,7 +47,7 @@ export default {
         </div>
     </div>
 
-    <!-- sezione icone -->
+    <!-- SEZIONE ICONE  -->
 
     <div class="container-icons">
         <div class="icons">
@@ -91,15 +91,24 @@ export default {
             width: 100%;
         }
     }
+
+    p {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    h3 {
+        font-family: 'Mali', cursive;
+        font-size: 24px;
+    }
 }
 
 .container-icons {
     height: 190px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     color: black;
-    margin-top: 157px;
+    margin-top: 155px;
     background-color: $color_dark-green;
     color: white;
 

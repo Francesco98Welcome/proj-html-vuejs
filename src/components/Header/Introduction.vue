@@ -13,7 +13,8 @@ export default {
 }
 </script>
 
-<template>
+<template><!-- SEZIONE IMMAGINE DONNA CON CANE, PARTE DELL'HEADER-->
+
     <div class="hero">
         <div class="partOne">
             <ul>
@@ -25,6 +26,7 @@ export default {
         <div class="sfondo">
 
             <div class="text">
+                <h4>FIND THE BEST ANIMAL SUPPLIES</h4>
                 <h2>We know animals are a part of your family, let us help take care of them</h2>
                 <Btn text="Learn more about us" bg="white" />
             </div>
@@ -35,8 +37,7 @@ export default {
             <img src="../../assets/categories/food/littlefoodimage.png">
             <p>Get $25 OFF your first purchase of our homemade pet food!</p><a href="#">Visit the shop!</a>
         </div>
-    </div>
-
+</div>
 </template>
 
 
@@ -95,6 +96,11 @@ export default {
 
         h2 {
             font-size: 40px;
+            color: white;
+            font-family: 'Mali', cursive;
+        }
+
+        h4 {
             color: white;
         }
     }

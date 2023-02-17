@@ -60,6 +60,7 @@ export default {
             >h3 {
                 margin-bottom: 12px;
                 color: white;
+                font-family: 'Mali', cursive;
             }
 
             >p {

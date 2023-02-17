@@ -85,8 +85,9 @@ export default {
 
         <div class="links-footer">
             <ul>
+
                 <li v-for="item in menuItemsThree">
-                    {{ item.lastLinks }}
+                    <a href="#">{{ item.lastLinks }}</a>
                 </li>
             </ul>
             <div class="icons">
@@ -102,7 +103,7 @@ export default {
             <i class="fa-solid fa-copyright"></i> Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights
             Reserved | Powered by WordPress
         </p>
-    </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
@@ -204,7 +205,7 @@ footer {
     margin-top: 40px;
 
     i {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
@@ -212,7 +213,7 @@ footer {
     padding: 10px;
     background-color: black;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
 }
 </style>

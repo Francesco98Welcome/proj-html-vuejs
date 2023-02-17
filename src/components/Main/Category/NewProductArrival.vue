@@ -14,7 +14,7 @@ export default {
             info: [
                 { text: 'Colored pet bed', price: '$18.00 - $26.00', img: cuscini },
                 { text: 'Colorfull bet set', price: '$29.00', img: palline },
-                { text: 'Dog bone', oldprice: '$29.00', price: '$18.00', img: osso },
+                { text: 'Dog bone', oldprice: '$29.00', price: '$18.00', img: osso, sale: true },
                 { text: 'Animal trasport bag', price: '$25.00', img: borsa },
                 { text: 'Animal trasport cage', price: '$35.00', img: gabbia },
                 { text: 'Closable cat litter', price: '$16.00', img: gabbiagatto }
@@ -34,7 +34,7 @@ export default {
         <p>Lates products</p>
 
         <div class="new-products-arrivals">
-            <div v-for="info in info">
+            <div v-for="info in info" class="relative">
                 <div class="image">
                     <img :src='info.img' />
                 </div>
@@ -46,16 +46,23 @@ export default {
                         <span class="old-price">{{ info.oldprice }}</span>
                         {{ info.price }}
                     </div>
+                    <div v-if="info.sale" class="sale">
+                        Sale!
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+</div>
 </template>
 
 <style lang="scss">
 .newproduct {
     padding-top: 20px;
     text-align: center;
+
+    >h1 {
+        font-family: 'Mali', cursive;
+    }
 
 
     .new-products-arrivals {
@@ -86,6 +93,19 @@ export default {
                 padding: 6px;
             }
         }
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .sale {
+        position: absolute;
+        top: 2%;
+        left: 3%;
+        background-color: $color_light-green;
+        color: white;
+        border-radius: 20px;
     }
 }
 </style>

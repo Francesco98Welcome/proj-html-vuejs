@@ -86,6 +86,11 @@ export default {
     text-align: center;
     margin-top: 40px;
 
+    h3 {
+        font-family: 'Mali', cursive;
+        font-size: 30px;
+    }
+
     * {
         padding-top: 10px;
     }
@@ -117,6 +122,7 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+        font-family: 'Mali', cursive;
 
         >div:last-child {
             text-align: center;

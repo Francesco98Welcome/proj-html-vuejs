@@ -13,10 +13,12 @@ export default {
         return {
             // salvo i dati per la sezione delle categorie, prima sezione del main
             info: [
-                { text: 'How to lose leash walk your dog', desc: 'April 21st, 2020', img: girldog },
-                { text: 'Stop cats from scratching furniture', desc: 'April 19st, 2020', img: catjump },
-                { text: 'Where to buy the best pet food', desc: 'April 18th, 2020', img: catsleep },
-                { text: 'Proper care for your pet toys', desc: 'April 17th, 2020', img: kiddog },
+                {
+                    text: 'How to lose leash walk your dog', desc: 'April 21st, 2020', hover: "How to 'loose leash walk' your dog", img: girldog
+                },
+                { text: 'Stop cats from scratching furniture', desc: 'April 19st, 2020', hover: 'Stop cats from scratching furniture', img: catjump },
+                { text: 'Where to buy the best pet food', desc: 'April 18th, 2020', hover: 'Where to buy the best pet food', img: catsleep },
+                { text: 'Proper care for your pet toys', desc: 'April 17th, 2020', hover: 'Proper care for your pet toys', img: kiddog },
             ],
         }
     },
@@ -34,6 +36,7 @@ export default {
             <div v-for="info in info">
                 <div>
                     <img :src='info.img' />
+                    <span class="hover-card">{{ info.hover }} <br>Tips & tricks</span>
                 </div>
                 <div class="txt">
                     {{ info.text }}<br>
@@ -52,6 +55,10 @@ export default {
     margin-top: 70px;
     text-align: center;
 
+    >h1 {
+        font-family: 'Mali', cursive;
+    }
+
     .tipsandtricks {
         display: flex;
         justify-content: space-between;
@@ -60,6 +67,23 @@ export default {
             width: calc(100% / 4);
             margin: 0 auto;
             margin: 10px;
+            position: relative;
+            cursor: pointer;
+
+            .hover-card {
+                display: none;
+            }
+
+            >&:hover .hover-card {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -110%);
+                display: block;
+                color: white;
+                font-size: 20px;
+            }
+
 
             img {
                 width: 100%;

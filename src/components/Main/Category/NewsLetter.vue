@@ -26,7 +26,7 @@ export default {
                 Volutpat vel turpis nulla lorem sad semper. Alinquam sagittis sem libero
                 viverra vehiucla nullm ut nisl.
             </p>
-            <Btn text="Insert your email..*" bg="$color_light-b" color="black" class="long-btn" />
+            <input type="text" placeholder="Insert your email ...*">
             <Btn text="Subscribe" bg=" green" color="white" />
         </div>
         <div class="croccantini">
@@ -56,11 +56,17 @@ export default {
             line-height: 1.7;
         }
 
-        .long-btn {
-            padding-right: 200px;
-            margin-right: 20px;
-            padding-top: 11px;
-            padding-bottom: 11px;
+        >h1 {
+            font-family: 'Mali', cursive;
+        }
+
+        input {
+            width: 300px;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            background-color: #d8d5d5;
+            margin-right: 10px;
         }
     }
 

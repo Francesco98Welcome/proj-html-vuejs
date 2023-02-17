@@ -53,6 +53,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
+
+    h2 {
+        font-family: 'Mali', cursive;
+    }
 }
 
 .items {
